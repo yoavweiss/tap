@@ -93,8 +93,7 @@
     <p>
       There are multiple reasons for that:
       <ul>
-          <li>Caches directives do not oblige the browser to cache resources, and it evicts popular resources when disk space becomes limited (YW:
-          I'm not sure this is the case (Need data). If it is, the place to fix this is in caches, not by bypassing them. )</li>
+          <li>Caches directives do not oblige the browser to cache resources, and it evicts popular resources when disk space becomes limited </li>
           <li>Resources are often fetched by different sites from various URLs, making it impossible for browser caches to share them among
           sites </li>
       </ul>
@@ -125,7 +124,6 @@
     	As we layer things atop one another, there are only two choices: 
         1) a pre-build which <em>redelivers those shared modules in a single request</em> or <em>deal with dependency management at runtime</em>.  
         The later is particularly slow and unattractive.
-        (???YW: I don't understand what you're saying here)
     </p>
     <p>
     	This proposal lays out an idea for a special kind of store, "closer to the metal" with less of the problems that the current model creates.  
